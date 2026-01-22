@@ -1,1 +1,7 @@
-<p>login works!</p>
+<form>
+    <label for="token">Token:</label>
+    <!-- Two way data binding is done with [(ngModel)] -->
+    <input type="text" id="token" name="token" placeholder="Enter your token" [(ngModel)]="token"/>
+    <!-- All events in angular are referred in html with (event) all HTML events are handled in the component class -->
+    <button (click)="doLogin()">Login</button>
+</form>

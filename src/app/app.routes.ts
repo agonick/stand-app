@@ -8,7 +8,7 @@ import { NewMeetings } from './components/new-meetings/new-meetings';
 
 // questo router si occupa di definire le rotte principali dell'applicazione, il component router-outlet nell app.component si occuperà di caricare al suo posto il componente selezionato dalla rotta
 export const routes: Routes = [
-    { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+    { path: '', redirectTo: '/login', pathMatch: 'full' },
     // canActivate: [AuthGuard] inserisce una guardia di autenticazione per proteggere la rotta dashboard
     // children: Routes[] permette di definire delle sottorotte all'interno della rotta principale dashboard
     { path: 'dashboard', component: Dashboard, title: 'Dashboard', children: [] },
