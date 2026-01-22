@@ -1,14 +1,15 @@
 <main>
   <nav>
     <ul>
-      <li>Dashboard</li>
-      <li>Meetings</li>
-      <li>Team</li>
+      <!!-- Aggiunta di link di navigazione per le diverse sezioni dell'applicazione, usando il router-link evitiamo di
+        dover ricaricare tutta la pagina e di sfruttare il routing di Angular -->
+        <li><a routerLink="/dashboard">Dashboard</a></li>
+        <li><a routerLink="/meetings">Meetings</a></li>
+        <li><a routerLink="/team">Team</a></li>
     </ul>
   </nav>
-  <router-outlet/>
+  <router-outlet />
   <footer>
     <p>&copy; 2026 Stand-App</p>
   </footer>
 </main>
-
